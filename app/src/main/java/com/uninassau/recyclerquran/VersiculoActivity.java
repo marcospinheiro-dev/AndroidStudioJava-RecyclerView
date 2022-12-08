@@ -23,7 +23,7 @@ public class VersiculoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_versiculo);
 
-//        recyclerViewVerse = findViewById(R.id.RecyclerView);
+        recyclerViewVerse = findViewById(R.id.RecyclerView);
 
 //        mAdapter = new VersiculoAdapter(new List<Versicle>());
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
