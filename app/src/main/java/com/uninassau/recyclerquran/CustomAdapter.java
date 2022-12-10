@@ -61,7 +61,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
             }
         });
 
-        RecyclerView onItemClick = null; //= onItemClick.findViewById();
+//        RecyclerView onItemClick = null; //= onItemClick.findViewById();
 
     }
 
