@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class VersiculoActivity extends AppCompatActivity {
@@ -23,9 +24,9 @@ public class VersiculoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_versiculo);
 
-        recyclerViewVerse = findViewById(R.id.RecyclerView);
-
-//        mAdapter = new VersiculoAdapter(new List<Versicle>());
+        recyclerViewVerse = findViewById(R.id.RecyclerViewVerse);
+        List<Versicle> lista = new ArrayList<>();
+        mAdapter = new VersiculoAdapter(lista);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerViewVerse.setLayoutManager(mLayoutManager);
         recyclerViewVerse.setItemAnimator(new DefaultItemAnimator());

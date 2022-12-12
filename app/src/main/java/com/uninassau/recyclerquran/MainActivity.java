@@ -26,8 +26,6 @@ public class MainActivity extends AppCompatActivity {
 
         recyclerView = findViewById(R.id.RecyclerView);
 
-        System.out.println("Hello teste!");
-
         getSuperHeroes();
     }
 
