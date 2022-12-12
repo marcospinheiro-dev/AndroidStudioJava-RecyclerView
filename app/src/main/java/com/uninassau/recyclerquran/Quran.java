@@ -32,4 +32,5 @@ public class Quran {
         }
         return chapters;
     }
+
 }
