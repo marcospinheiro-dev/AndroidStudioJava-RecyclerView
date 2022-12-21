@@ -24,8 +24,10 @@ public class VersiculoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_versiculo);
 
+        Chapter chapter = (Chapter) getIntent().getExtras().get("chapter");
+
         recyclerViewVerse = findViewById(R.id.RecyclerViewVerse);
-        List<Versicle> lista = new ArrayList<>();
+        List<Versicle> lista = chapter.getVersicles();
         mAdapter = new VersiculoAdapter(lista);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerViewVerse.setLayoutManager(mLayoutManager);

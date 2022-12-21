@@ -5,7 +5,8 @@
     android:layout_marginRight="0dp"
     android:orientation="vertical"
     android:padding="5dp"
-    android:gravity="center_vertical">
+    android:gravity="center_vertical"
+    android:id="@+id/item_vh">
     <TextView
         android:id="@+id/text2"
         android:layout_width="wrap_content"
