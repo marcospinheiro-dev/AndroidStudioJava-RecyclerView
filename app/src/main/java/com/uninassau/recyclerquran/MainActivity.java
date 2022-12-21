@@ -29,15 +29,15 @@ public class MainActivity extends AppCompatActivity implements OnItemClickListen
 
         recyclerView = findViewById(R.id.RecyclerView);
 
-        getSuperHeroes();
+        makeRequest();
 
         this.myClickListener = this;
     }
 
-    private void getSuperHeroes() {
+    private void makeRequest() {
         //QURAN
 
-        Call<Quran> call = RetrofitClient.getInstance().getMyApi().getsuperHeroes();
+        Call<Quran> call = RetrofitClient.getInstance().getMyApi().getQuran();
         call.enqueue(new Callback<Quran>() {
             @Override
             public void onResponse(Call<Quran> call, Response<Quran> response) {
