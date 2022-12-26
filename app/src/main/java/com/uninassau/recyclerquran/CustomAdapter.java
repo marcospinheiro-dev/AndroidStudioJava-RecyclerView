@@ -52,7 +52,6 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
     @Override
     public void onBindViewHolder(ViewHolder viewHolder, int position) {
         viewHolder.text1.setText(String.valueOf(localDataSet.get(position).getNumber()));
-//        viewHolder.bind(localDataSet.get(position));
         viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -60,8 +59,6 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
                 view.getContext().startActivity(new Intent(view.getContext(), VersiculoActivity.class));
             }
         });
-
-//        RecyclerView onItemClick = null; //= onItemClick.findViewById();
 
     }
 
