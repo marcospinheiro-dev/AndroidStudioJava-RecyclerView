@@ -35,5 +35,4 @@ public class VersiculoActivity extends AppCompatActivity {
         recyclerViewVerse.setAdapter(mAdapter);
     }
 
-
 }

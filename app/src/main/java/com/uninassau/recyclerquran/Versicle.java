@@ -1,3 +1,4 @@
+
 package com.uninassau.recyclerquran;
 
 import com.google.gson.annotations.SerializedName;
