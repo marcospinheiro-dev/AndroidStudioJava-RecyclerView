@@ -1,9 +1,10 @@
 package com.uninassau.recyclerquran;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Chapter {
+public class Chapter implements Serializable {
 
     public Chapter(){}
 
